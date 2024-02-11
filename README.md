@@ -1,5 +1,4 @@
 # Тестовое задание
-Да поможет нам Бог.
 
 Ссылка на debug-версию apk: https://drive.google.com/file/d/135s9bbpzEWVRNzLn96sdFu-3LjCnXC3-/view?usp=sharing
 или Qr-код:
