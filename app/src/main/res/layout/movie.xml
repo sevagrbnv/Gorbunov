@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Изображение-постер фильма (в левой части) -->
+            <ImageView
+                android:id="@+id/imagePoster"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_poster" />
+
+            <!-- Вертикальный контейнер для текстовых элементов -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Наименование фильма -->
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Название фильма"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Год выпуска -->
+                <TextView
+                    android:id="@+id/textYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Год выпуска"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Звезда-пометка для фильма -->
+            <ImageView
+                android:id="@+id/imageStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Star"
+                android:paddingVertical="8dp"
+                android:src="@drawable/star" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
